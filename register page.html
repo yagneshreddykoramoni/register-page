@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>Register page</title>
+        <link rel="stylesheet" href="register page.css">
+        <script src="https://kit.fontawesome.com/56468b43e1.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="register-page">
+            <form action="" name="Formfill" onsubmit="return validation()">
+                <h1>Register</h1>
+                <p id="required"></p>
+                <div class="username">
+                    <input type="text" name="Username" placeholder="Username">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <hr>
+                <div class="email">
+                    <input type="email" name="Email" placeholder="Email">
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+                <hr>
+                <div class="password">
+                    <input type="password" name="Password" placeholder="Password">
+                    <i class="fa-solid fa-lock"></i>
+                </div>
+                <hr>
+                <div class="c-password">
+                    <input type="password" name="cPassword" placeholder="Confirm Password">
+                    <i class="fa-solid fa-lock"></i>
+                </div>
+                <hr>
+                <div class="register">
+                    <input class="register-btn" type="submit" onclick="validation()" value="Register">
+                </div>
+                <div class="back">
+                    <p><a href="#"><i class="fa-solid fa-less-than"></i>  Back</a></p>
+                    <span><a href="login page.html">Login</a></span>
+                </div>
+            </form>
+        </div>
+        <div class="popup" id="popup">
+            <i class="fa-regular fa-circle-check"></i>
+            <h2>Thank you!!</h2>
+            <p>You have registered successfully.</p>
+            <a href="login page.html"><button class="open-slide" onclick="Closeslide()">OK</button></a>
+        </div>
+        <script src="register page.js"></script>
+    </body>
+</html>
